@@ -59,30 +59,6 @@
             text-align: center;
             margin-top: 1rem;
         }
-        /* Gemini Feature Styles */
-        #ai-modal {
-            display: none;
-        }
-        .gemini-button {
-            background: linear-gradient(90deg, #4F46E5, #EC4899);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .gemini-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        .loader {
-            border: 8px solid #f3f3f3; /* Light grey */
-            border-top: 8px solid #4F46E5; /* Blue */
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -106,10 +82,10 @@
                 </div>
                 <span class="text-4xl font-light text-gray-400">+</span>
                 <!-- Logo Boticario -->
-                <span class="font-bold">Grupo Boticário</span><br>
+                <span class="font-bold text-white">Grupo Boticário</span>
                 <span class="text-4xl font-light text-gray-400">+</span>
                 <!-- Logo Koru -->
-                <span class="font-bold">Koru</span><br>    
+                <span class="font-bold text-white">Koru</span>
             </div>
         </div>
 
@@ -133,7 +109,7 @@
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">1. Analista de Dados (Data Analyst)</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">O Analista de Dados coleta, limpa e analisa dados para identificar tendências e insights. Ele cria relatórios e dashboards para transformar números em informações claras e ajudar na tomada de decisão. É a principal porta de entrada para a área.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
@@ -141,14 +117,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Analista de Dados">✨ Gerar Plano de Estudos</button>
         </div>
 
         <!-- Slide 5: Analista de BI -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">2. Analista de Business Intelligence (BI)</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">Focado em monitorar a saúde do negócio, o Analista de BI cria e gerencia dashboards e relatórios interativos. Ele ajuda os gestores a acompanhar os principais indicadores de desempenho (KPIs) em tempo real para direcionar a estratégia.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
@@ -156,14 +131,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Analista de Business Intelligence">✨ Gerar Plano de Estudos</button>
         </div>
 
         <!-- Slide 6: Especialista em Viz -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">3. Especialista em Visualização de Dados</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">Transforma dados complexos em representações visuais claras e impactantes. Este especialista foca na criação de gráficos, mapas e dashboards que não apenas informam, mas também contam uma história e facilitam a compreensão dos insights.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
@@ -171,14 +145,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Especialista em Visualização de Dados">✨ Gerar Plano de Estudos</button>
         </div>
 
         <!-- Slide 7: Data Storyteller -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">4. Data Storyteller</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">Mais do que apenas visualizar, o Data Storyteller constrói uma narrativa convincente em torno dos dados. Ele combina análise, visualização e técnicas de comunicação para apresentar insights de uma forma que engaje a audiência e inspire a tomada de ação.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
@@ -186,7 +159,6 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Data Storyteller">✨ Gerar Plano de Estudos</button>
         </div>
 
         <!-- Slide 8: Nível 2 Intro -->
@@ -199,7 +171,7 @@
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">5. Analista de Operações de Dados (DataOps)</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">O analista de DataOps foca na automação e otimização dos fluxos de dados. Ele monitora a saúde dos pipelines, soluciona problemas e implementa práticas para garantir que a coleta e o processamento de dados sejam eficientes e confiáveis.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
@@ -207,14 +179,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Analista de Operações de Dados">✨ Gerar Plano de Estudos</button>
         </div>
 
         <!-- Slide 10: Analytics Engineer -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">6. Engenheiro de Analytics</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">Atua como uma ponte crucial entre a engenharia e a análise. Ele pega os dados brutos e os transforma, modela e documenta, criando conjuntos de dados limpos e confiáveis, prontos para serem usados pelos analistas.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
@@ -222,14 +193,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Engenheiro de Analytics">✨ Gerar Plano de Estudos</button>
         </div>
 
         <!-- Slide 11: DBA -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">7. Administrador de Banco de Dados (DBA)</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">O DBA é o guardião dos bancos de dados. Ele garante que os sistemas funcionem de forma eficiente, segura e confiável, realizando tarefas de manutenção, backup, recuperação e controle de acesso.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
@@ -237,14 +207,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️<span class="stars-empty">☆☆☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Administrador de Banco de Dados">✨ Gerar Plano de Estudos</button>
         </div>
 
         <!-- Slide 12: Data Engineer -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">8. Engenheiro de Dados</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">É o arquiteto da informação. O Engenheiro de Dados constrói e mantém a infraestrutura, desenvolvendo pipelines robustos para coletar, armazenar e processar grandes volumes de dados. Ele prepara o terreno para a análise.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
@@ -252,20 +221,47 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Engenheiro de Dados">✨ Gerar Plano de Estudos</button>
+        </div>
+        
+        <!-- Slide 13: Data Platform Engineer -->
+        <div class="slide w-full h-full flex-col justify-center items-center p-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">9. Data Platform Engineer</h2>
+            <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">Constrói e gerencia a infraestrutura escalável (a "plataforma") onde todas as ferramentas e serviços de dados da empresa operam. Foca na automação, confiabilidade e performance da plataforma como um todo.</p>
+            <div class="pillar-container">
+                <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
+                <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
+                <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
+                <div class="pillar"><span>Estatística e Modelagem:</span><span class="stars">⭐️<span class="stars-empty">☆☆☆☆</span></span></div>
+                <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
+                <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
+            </div>
         </div>
 
-        <!-- Slide 13: Nível 3 Intro -->
+        <!-- Slide 14: Data Platform Developer -->
+        <div class="slide w-full h-full flex-col justify-center items-center p-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">10. Data Platform Developer</h2>
+            <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">Desenvolve as ferramentas, APIs e serviços que rodam na plataforma de dados. Cria soluções customizadas para facilitar o acesso, processamento e uso dos dados por outras equipes, como cientistas e analistas.</p>
+            <div class="pillar-container">
+                <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
+                <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
+                <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
+                <div class="pillar"><span>Estatística e Modelagem:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
+                <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
+                <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Nível 3 Intro -->
         <div class="slide level-title-card w-full h-full flex-col justify-center items-center p-8">
             <h2>Nível 3: A Estratégia e a Governança</h2>
             <p>Funções que exigem uma visão mais ampla e estratégica. O foco aqui é gerenciar os dados como um ativo da empresa, definir políticas e liderar projetos.</p>
         </div>
 
-        <!-- Slide 14: Data Governance Manager -->
+        <!-- Slide 16: Data Governance Manager -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-2">9. Gerente de Governança de Dados</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">11. Gerente de Governança de Dados</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">Cria e implementa as "regras do jogo" para os dados. Este gerente define políticas para garantir a qualidade, consistência, segurança e uso adequado dos dados, tratando-os como um ativo estratégico e confiável.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
@@ -273,14 +269,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Gerente de Governança de Dados">✨ Gerar Plano de Estudos</button>
         </div>
 
-        <!-- Slide 15: DPO -->
+        <!-- Slide 17: DPO -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-2">10. Encarregado de Proteção de Dados (DPO)</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">12. Encarregado de Proteção de Dados (DPO)</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">O DPO é o guardião da privacidade. Ele garante que a empresa cumpra as leis de proteção de dados (como a LGPD), orienta sobre as melhores práticas e atua como a ponte entre a empresa, os titulares dos dados e as autoridades.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
@@ -288,14 +283,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Encarregado de Proteção de Dados (DPO)">✨ Gerar Plano de Estudos</button>
         </div>
 
-        <!-- Slide 16: Data Architect -->
+        <!-- Slide 18: Data Architect -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-2">11. Arquiteto de Dados</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">13. Arquiteto de Dados</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">O Arquiteto de Dados é o planejador mestre. Ele desenha o "blueprint" de toda a arquitetura de dados da empresa, definindo como os dados serão armazenados, gerenciados e integrados. É uma função sênior que define a visão técnica.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
@@ -303,14 +297,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Arquiteto de Dados">✨ Gerar Plano de Estudos</button>
         </div>
 
-        <!-- Slide 17: Data Product Manager -->
+        <!-- Slide 19: Data Product Manager -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-2">12. Gerente de Produto de Dados</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">14. Gerente de Produto de Dados</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">Trata os dados como um produto. Este gerente identifica necessidades que podem ser resolvidas com dados, define a visão para esses "produtos de dados" (ex: um sistema de recomendação) e lidera a equipe para construí-los.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
@@ -318,20 +311,19 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Gerente de Produto de Dados">✨ Gerar Plano de Estudos</button>
         </div>
 
-        <!-- Slide 18: Nível 4 Intro -->
+        <!-- Slide 20: Nível 4 Intro -->
         <div class="slide level-title-card w-full h-full flex-col justify-center items-center p-8">
             <h2>Nível 4: A Fronteira da Inovação</h2>
             <p>O topo da pirâmide. Funções que utilizam técnicas avançadas de modelagem, machine learning e IA para prever o futuro, automatizar decisões e criar soluções inovadoras.</p>
         </div>
 
-        <!-- Slide 19: Data Scientist -->
+        <!-- Slide 21: Data Scientist -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-2">13. Cientista de Dados</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">15. Cientista de Dados</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">O Cientista de Dados usa métodos científicos para extrair conhecimento de dados. Ele aplica estatística avançada e machine learning para criar modelos preditivos, responder perguntas complexas e descobrir oportunidades de negócio.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
@@ -339,14 +331,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Cientista de Dados">✨ Gerar Plano de Estudos</button>
         </div>
 
-        <!-- Slide 20: ML Engineer -->
+        <!-- Slide 22: ML Engineer -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-2">14. Engenheiro de Machine Learning</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">16. Engenheiro de Machine Learning</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">É quem transforma os modelos de machine learning em produtos reais e escaláveis. Ele foca em colocar os modelos em produção, garantindo que eles funcionem de forma eficiente e contínua no ambiente da empresa.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
@@ -354,14 +345,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Engenheiro de Machine Learning">✨ Gerar Plano de Estudos</button>
         </div>
 
-        <!-- Slide 21: Research Scientist -->
+        <!-- Slide 23: Research Scientist -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-2">15. Cientista de Pesquisa</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">17. Cientista de Pesquisa</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">Fica na vanguarda do conhecimento. O Cientista de Pesquisa desenvolve novos algoritmos e abordagens para resolver problemas complexos. Ele publica artigos e empurra os limites da ciência de dados e IA.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
@@ -369,14 +359,13 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️<span class="stars-empty">☆☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Cientista de Pesquisa">✨ Gerar Plano de Estudos</button>
         </div>
 
-        <!-- Slide 22: Prompt Engineer -->
+        <!-- Slide 24: Prompt Engineer -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-2">16. Engenheiro de Prompt</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">18. Engenheiro de Prompt</h2>
             <p class="text-lg text-gray-600 mb-6 max-w-3xl text-center">É o especialista em "conversar" com modelos de IA Generativa. Ele projeta, testa e refina os comandos (prompts) para extrair os melhores e mais precisos resultados dos modelos de linguagem, atuando na fronteira da interação humano-máquina.</p>
-            <div class="pillar-container mb-6">
+            <div class="pillar-container">
                 <h3 class="text-2xl font-bold mb-4 text-center">Quais os conhecimentos necessários em pilares?</h3>
                 <div class="pillar"><span>Conhecimento Técnico:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
                 <div class="pillar"><span>Comunicação:</span><span class="stars">⭐️⭐️⭐️⭐️⭐️</span></div>
@@ -384,29 +373,28 @@
                 <div class="pillar"><span>Negócios e Estratégia:</span><span class="stars">⭐️⭐️⭐️<span class="stars-empty">☆☆</span></span></div>
                 <div class="pillar"><span>Ética e Privacidade de Dados:</span><span class="stars">⭐️⭐️⭐️⭐️<span class="stars-empty">☆</span></span></div>
             </div>
-            <button class="gemini-button text-white font-bold py-3 px-6 rounded-lg generate-plan-btn" data-profession="Engenheiro de Prompt">✨ Gerar Plano de Estudos</button>
         </div>
 
-        <!-- Slide 23: Nível Bônus Intro -->
+        <!-- Slide 25: Nível Bônus Intro -->
         <div class="slide level-title-card w-full h-full flex-col justify-center items-center p-8">
             <h2>Nível Bônus: Especializações de Nicho</h2>
             <p>A área de dados é vasta! Existem especializações que aplicam habilidades de dados a setores específicos. São ótimas oportunidades para combinar paixões.</p>
         </div>
 
-        <!-- Slide 24: Bonus List -->
+        <!-- Slide 26: Bonus List -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-4xl font-bold text-gray-800 mb-6">Especializações de Nicho</h2>
             <div class="text-left max-w-2xl text-xl text-gray-700 space-y-3">
-                <p><strong>17. Especialista de Domínio de Dados:</strong> Um expert em uma área de negócio (saúde, finanças) que entende profundamente os dados daquele setor.</p>
-                <p><strong>18. Analista de Dados de Marketing</strong></p>
-                <p><strong>19. Analista de Dados Financeiros ("Quant")</strong></p>
-                <p><strong>20. Analista de Dados da Saúde</strong></p>
-                <p><strong>21. Jornalista de Dados</strong></p>
-                <p><strong>22. Analista de Dados para Games</strong></p>
+                <p><strong>19. Especialista de Domínio de Dados:</strong> Um expert em uma área de negócio (saúde, finanças) que entende profundamente os dados daquele setor.</p>
+                <p><strong>20. Analista de Dados de Marketing</strong></p>
+                <p><strong>21. Analista de Dados Financeiros ("Quant")</strong></p>
+                <p><strong>22. Analista de Dados da Saúde</strong></p>
+                <p><strong>23. Jornalista de Dados</strong></p>
+                <p><strong>24. Analista de Dados para Games</strong></p>
             </div>
         </div>
 
-        <!-- Slide 25: Conclusão -->
+        <!-- Slide 27: Conclusão -->
         <div class="slide w-full h-full flex-col justify-center items-center p-8">
             <h2 class="text-5xl font-bold text-gray-800 mb-8">Por Onde Começar?</h2>
             <div class="text-left max-w-2xl text-xl text-gray-700 space-y-4">
@@ -418,32 +406,16 @@
             </div>
         </div>
 
-        <!-- Slide 26: Perguntas -->
+        <!-- Slide 28: Perguntas -->
         <div class="slide w-full h-full flex-col justify-center items-center text-center p-8 bg-gray-900 text-white">
             <h1 class="text-6xl font-black mb-6">Perguntas?</h1>
             <p class="text-3xl font-light text-gray-300">Obrigado!</p>
             <div class="mt-12 text-xl text-gray-400">
-                <p>Desenvolve 2025 - Trilha de Dados</p>
+                <p>Programa Desenvolve 2025 - Trilha de Dados</p>
                 <p>Mentoria Turma 10</p>
             </div>
         </div>
 
-    </div>
-
-    <!-- Modal para o Plano de Estudos do Gemini -->
-    <div id="ai-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 z-50 flex justify-center items-center">
-        <div class="bg-white rounded-lg shadow-2xl p-8 max-w-4xl w-full max-h-[90vh] flex flex-col">
-            <div class="flex justify-between items-center mb-4">
-                <h3 id="modal-title" class="text-2xl font-bold text-gray-800">Plano de Estudos Personalizado</h3>
-                <button id="close-modal-btn" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
-            </div>
-            <div id="modal-content" class="overflow-y-auto">
-                <div id="loader-container" class="flex justify-center items-center h-64">
-                    <div class="loader"></div>
-                </div>
-                <pre id="plan-output" class="whitespace-pre-wrap font-sans text-gray-700"></pre>
-            </div>
-        </div>
     </div>
 
     <!-- Navegação e Contador -->
@@ -462,14 +434,6 @@
             const slideCounter = document.getElementById('slide-counter');
             let currentSlide = 0;
 
-            // Elementos do Modal da IA
-            const aiModal = document.getElementById('ai-modal');
-            const closeModalBtn = document.getElementById('close-modal-btn');
-            const modalTitle = document.getElementById('modal-title');
-            const planOutput = document.getElementById('plan-output');
-            const loaderContainer = document.getElementById('loader-container');
-            const presentationContainer = document.getElementById('presentation-container');
-
             function showSlide(index) {
                 if (slides[currentSlide]) {
                     slides[currentSlide].classList.remove('active');
@@ -487,80 +451,10 @@
             nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
             
             document.addEventListener('keydown', (e) => {
-                if (aiModal.style.display !== 'flex') {
-                    if (e.key === 'ArrowRight' && currentSlide < slides.length - 1) {
-                        showSlide(currentSlide + 1);
-                    } else if (e.key === 'ArrowLeft' && currentSlide > 0) {
-                        showSlide(currentSlide - 1);
-                    }
-                }
-            });
-
-            // --- Lógica da Funcionalidade Gemini ---
-
-            // Função para chamar a API do Gemini
-            async function generateStudyPlan(professionName) {
-                const prompt = `Crie um plano de estudos detalhado de 3 meses para uma pessoa em transição de carreira que deseja se tornar um(a) ${professionName}. O plano deve ser semanal, com metas claras, sugestões de projetos práticos e links para recursos de aprendizado gratuitos (artigos, tutoriais, cursos no YouTube, documentação oficial). Formate a resposta em Markdown, usando títulos, negrito e listas.`;
-                
-                let chatHistory = [];
-                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                const payload = { contents: chatHistory };
-                const apiKey = "" // A chave da API será injetada pelo ambiente
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-                try {
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (!response.ok) {
-                        throw new Error(`Erro na API: ${response.statusText}`);
-                    }
-
-                    const result = await response.json();
-                    
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        return text;
-                    } else {
-                        return "Não foi possível gerar um plano de estudos. A resposta da IA estava vazia.";
-                    }
-                } catch (error) {
-                    console.error("Erro ao chamar a API do Gemini:", error);
-                    return "Ocorreu um erro ao tentar gerar o plano de estudos. Por favor, tente novamente mais tarde.";
-                }
-            }
-
-            // Abrir o modal e chamar a IA
-            presentationContainer.addEventListener('click', async (e) => {
-                if (e.target.classList.contains('generate-plan-btn')) {
-                    const profession = e.target.dataset.profession;
-                    
-                    // Mostrar modal e loader
-                    aiModal.style.display = 'flex';
-                    loaderContainer.style.display = 'flex';
-                    planOutput.textContent = '';
-                    modalTitle.textContent = `Plano de Estudos para ${profession}`;
-
-                    // Gerar e exibir o plano
-                    const plan = await generateStudyPlan(profession);
-                    planOutput.textContent = plan; // Usando <pre> para manter a formatação
-                    loaderContainer.style.display = 'none';
-                }
-            });
-
-            // Fechar o modal
-            closeModalBtn.addEventListener('click', () => {
-                aiModal.style.display = 'none';
-            });
-            
-            aiModal.addEventListener('click', (e) => {
-                if (e.target === aiModal) {
-                    aiModal.style.display = 'none';
+                if (e.key === 'ArrowRight' && currentSlide < slides.length - 1) {
+                    showSlide(currentSlide + 1);
+                } else if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                    showSlide(currentSlide - 1);
                 }
             });
 
